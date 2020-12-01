@@ -896,38 +896,6 @@ function toParSE(){
     parSE.innerHTML = `Price: ${pricesSE.options[pricesSE.selectedIndex].text}$, Color is: ${iSE_colors.options[ iSE_colors.selectedIndex].text} `;
 }
 
-
-
-//*************************************************** Buy **********************************************************
-
-/* function toBuy(){
-    let input = prompt(`Please input your phone number to contact with you
-Number example: XXX-ХХ-ХХ-ХХХ `);
-    let regExp = /^0[5-9][0-9]-\d{2}-\d{2}-\d{3}/;
-
-    if(regExp.test(input)){
-        alert(`Number is correct! 
-We will call you in nearest 3 minutes to confirm your order`);
-    }else{
-        alert(`Something wrong with your number, please try again!`);
-    }
-}
- */
-
-
-/* function notificate(){
-    let input = prompt(`Please input your email: `);
-    let regExp = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
-
-    if(regExp.test(input)){
-        alert(`Email is correct! 
-We will notificate you when this phone is going to be available for buying`);
-    }else{
-        alert(`Something wrong with your email, please try again!`);
-    }
-} */
-
-
 //*************************************************** Count the price **********************************************************
 
 function count(){
