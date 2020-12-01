@@ -11,7 +11,7 @@ function accept(req, res){
                 client.messages.create({
                     to: '+380938541772',
                     from: '+14132695234',
-                    body: "We've got your message, and we'll notificate you when Iphone 12 are going to be available at our service",
+                    body: "We've received your message, and we'll notificate you when Iphone 12 are going to be available at our service",
                   }).then((message) => console.log(message.sid)); 
                   res.end("Message has already sent")        
         },3000);
