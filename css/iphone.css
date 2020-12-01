@@ -1,0 +1,367 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+  color: rgb(238, 228, 228);
+  font-size: 28px;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+  color: rgb(238, 228, 228);
+  font-size: 20px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+#count{
+  width: 50%;
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#btn{
+  font-size: 14px;
+  padding: 6px;
+  background-color: black;
+  color: white;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(238, 228, 228);
+  display: block;
+  font-size: 34px;
+}
+
+#myMenu li a:hover {
+    background-color:#2c2b2b;
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+#img{
+    text-align: left;
+}
+
+.i7{
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color:black;
+    display: inline-block;
+  }
+#priceFor7{
+  display: none;
+}
+#priceFor7Plus{
+    display: none;
+  }
+#priceForIphone7{
+    color: rgb(238, 228, 228); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+#priceForIphone7Plus{
+    color: rgb(238, 228, 228); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.container1 {
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color:black;
+    display: inline-block;
+  }
+
+.i8{
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#priceFor8{
+  display: none;
+}
+
+#priceFor8Plus{
+  display: none;
+}
+
+#priceForX{
+  display: none;
+}
+
+#priceForXr{
+  display: none;
+}
+
+#priceForXs{
+  display: none;
+}
+
+#priceForXsMax{
+  display: none;
+}
+
+#priceFor11{
+  display: none;
+}
+
+#priceFor11Pro{
+  display: none;
+}
+
+#priceFor11ProMax{
+  display: none;
+}
+
+#priceForSE{
+  display: none;
+}
+
+#iphone7col{
+  display: none;
+} 
+
+#iphone7Pcol{
+  display: none;
+} 
+
+#iphone8col{
+  display: none;
+} 
+
+#iphone8Pcol{
+  display: none;
+} 
+
+#iphoneXcol{
+  display: none;
+}
+#iphoneXrcol{
+  display: none;
+}
+#iphoneXscol{
+  display: none;
+}
+#iphoneXsMaxcol{
+  display: none;
+}
+#iphone11col{
+  display: none;
+}
+#iphone11Procol{
+  display: none;
+}
+#iphone11ProMaxcol{
+  display: none;
+}
+#iphoneSEcol{
+  display: none;
+}
+
+#iphone7{
+  background-color: black;
+  color: white;
+}
+#iphone7col{
+  background-color: black;
+  color: white;
+}
+
+#i7but{
+  background-color: black;
+  color: white;
+  width: 40%;
+}
+#iphone7Plus{
+  background-color: black;
+  color: white;
+}
+#i7Pbut{
+  background-color: black;
+  color: white;
+  width: 40%;
+}
+#iphone7Pcol{
+  background-color: black;
+  color: white;
+}
+#iphone8{
+  background-color: black;
+  color: white;
+}
+#i8but{
+  background-color: black;
+  color: white;
+  width: 40%;
+}
+#iphone8col{
+  background-color: black;
+  color: white;
+}
+#iphone8Plus{
+  background-color: black;
+  color: white; 
+}
+#i8Pbut{
+  background-color: black;
+  color: white;
+  width: 40%; 
+}
+#iphone8Pcol{
+  background-color: black;
+  color: white;
+}
+#iphoneX{
+  background-color: black;
+  color: white;
+}
+#iphoneXcol{
+  background-color: black;
+  color: white;
+}
+#i11probut{
+  background-color: black;
+  color: white;
+  width: 25%; 
+}
+#iphoneXr{
+  background-color: black;
+  color: white;
+}
+#iphoneXrcol{
+  background-color: black;
+  color: white;  
+}
+#iphoneXs{
+  background-color: black;
+  color: white;
+}
+#iphoneXscol{
+  background-color: black;
+  color: white;
+}
+#iphoneXsMax{
+  background-color: black;
+  color: white;
+}
+#iphoneXsMaxcol{
+  background-color: black;
+  color: white;
+}
+#iphone11{
+  background-color: black;
+  color: white; 
+}
+#iphone11col{
+  background-color: black;
+  color: white; 
+}
+#iphone11Pro{
+  background-color: black;
+  color: white; 
+}
+#iphone11Procol{
+  background-color: black;
+  color: white; 
+}
+#iphone11ProMax{
+  background-color: black;
+  color: white; 
+}
+#iphone11ProMaxcol{
+  background-color: black;
+  color: white; 
+}
+#iphoneSE{
+  background-color: black;
+  color: white; 
+}
+#iphoneSEcol{
+  background-color: black;
+  color: white; 
+}
+.i12{
+  color: white;
+  font-size: 36px;
+  background-color: black;
+  padding-bottom: 10px;
+  display: none;
+}
+
+#but_i12{
+  color: white;
+  background-color: black;
+  font-size: 24px;
+  padding: 25px;
+  width: 50%;
+}
+.cent{
+  text-align: center;
+}

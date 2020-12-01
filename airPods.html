@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/iphone.css">
+    <link rel = "stylesheet" href = "css/airpods.css">
+    <link rel = "stylesheet" href = "css/reg.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>AirPods</title>
+</head>
+<body>
+    <nav class= "main_Menu">
+        <ul class = "menu">
+            <a class = "logo" href= "index.html"><img src = "src/Logo.jpg" height="123px" width="170px"></a>
+             <li><a href="iphone.html">Iphone</a></li>
+             <li><a href="airPods.html">AirPods</a></li>
+             <li><a href="additionally.html">Additionally</a></li>
+             <li class="reggg"><a href="registration.html">login</a></li>
+         </ul>
+    </nav>
+    <div class="row">
+        <div class="left" style="background-color:black;">
+          <h2>Menu</h2>
+          <input type="text" id="mySearch" onkeyup="theSearch()" placeholder="Search.." title="Type in a category">
+          <ul id="myMenu">
+            <li><a href="#i7" onclick="forA1()">AirPods 1</a></li><br><br>
+            <li><a href="#i8" onclick="forA2()">AirPods 2</a></li><br><br>
+            <li><a href="#iX" onclick="forA3()">AirPods 3</a></li><br><br>
+            <li><a href="#all" onclick="forAllAir()">Show all AirPods</a></li>
+          </ul>
+          <input type="text" id="sum" readonly  placeholder="0" title="Type in a category"><input id="btnnn" type="button" value = "The summary price of airPods in dollars">
+        </div>
+        
+        <div class="right" id="right" style="background-color: rgb(14, 13, 13);">
+<!-- ************************************************AirPods1************************************************* -->
+            <div id ="a1" class="i7">
+                <form class="container">
+                    <img id= "img" src="src/AirPods/AirPods1.png"width="280px" height="300px" >     
+                <input id="PrA1" type="button" onclick="PriceA1()" value="Check the price">       
+                <button id = "i7but" onclick="toBuy()">Buy</button>
+                </form>
+                
+                <form class="container1">
+                    <img id= "img" src="src/AirPods/AirPods1.png "width="280px" height="300px" >      
+                <input id="PrA_1" type="button" onclick=" PriceA_1()" value="Check the price"> 
+                <button id = "i7Pbut" onclick="toBuy()">Buy</button>
+
+                
+
+                </form>
+        </div>
+<!-- ************************************************AirPods2************************************************* -->
+        <div class="i8" id = "a2">
+            <form class="container">
+                <img id= "img" src="src/AirPods/AirPods2.png"width="280px" height="300px" >
+            <input id="PrA2" type="button" onclick=" PriceA2()" value="Check the price"> 
+            <button id="i8but" onclick="toBuy()">Buy</button>
+            </form>
+            
+
+
+            <form class="container1">
+                <img id= "img" src="src/AirPods/AirPods1.png"width="280px" height="300px" >       
+            <input id="PrA2W" type="button" onclick=" PriceA2W()" value="Check the price">
+            <button id = "i8Pbut" onclick="toBuy()">Buy</button>
+            </form>
+    </div>
+
+<!-- ************************************************AirPods3************************************************* -->
+    <div class="i8" id = "a3">
+        <form class="container">
+            <img id= "img" src="src/AirPods/AirPods3.png"width="280px" height="300px" >       
+        <input id="PrA3" type="button" onclick=" PriceA3()" value="Check the price">       
+        <button id="i8but" onclick="toBuy()">Buy</button>
+        </form>
+        
+</div>
+
+
+    </div>
+<script src="js/iphone.js"></script>     
+<script src="js/menu.js"></script>   
+<script src="js/AirPods.js"></script>
+<script src="js/reg.js"></script>
+</body>
+</html>

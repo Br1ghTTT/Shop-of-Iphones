@@ -1,0 +1,159 @@
+html {
+   background-color:rgba(19, 16, 16, 0.801); 
+}
+
+
+.menu {
+   list-style-type: none;
+   padding: 0px;
+   overflow: hidden;
+   background-color:black;
+   margin: 0;
+}
+
+.menu a {
+   float: left;
+}
+
+li {
+   float: left;
+   text-align: center;
+}
+li a {
+      display:block;
+   color: white;
+   text-align: center;
+   padding: 38px;
+   padding-left: 75px;
+   padding-right: 75px;
+   text-decoration: blink;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 36px;
+}
+
+li a:hover {
+   background-color:#2c2b2b;
+}
+
+.logo {              
+   padding-left: 30px;
+   display: inline-block;
+}
+
+#header{
+   padding-left: 250px;
+}
+#about{
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(238, 228, 228);
+}
+.tag {
+   padding-top: 20px;
+   margin-top: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   font-size: 36px;
+   color: rgb(238, 228, 228);
+   font-weight: bold;
+   background-color: black;
+}
+.nameTag {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 46px;
+}
+.mainPage{
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(238, 228, 228);
+   font-size: 20px;
+   background-color: black;
+   margin-top: 0;
+   
+}
+#tab{
+   padding-left: 35px;
+}
+.news{
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   background-color: black;
+   font-size: 46px;
+   color: rgb(238, 228, 228); 
+   font-weight: bold;
+}
+.soon{
+   font-size: 26px;
+   color: rgb(238, 228, 228); 
+   padding-top: 9px;
+   background-color: black;
+   
+}
+.newsLogo{
+   padding-top: 9px;
+   text-align: center;
+   background-color: black;
+}
+.aboutUs{
+   color:rgb(238, 228, 228);
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: none;
+}
+
+#map {
+   padding-top: 100px;
+   height: 500px;
+   width: 600px;
+   margin: 0 auto;
+   display: none;
+   background-color: black;
+}
+#mail{
+   color:rgb(238, 228, 228);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align:center;
+   margin-top:7px;
+   font-size:14px;
+   display: none;
+
+}
+#aboutUs{
+   color:rgb(238, 228, 228);
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: black;
+   display: none;
+}
+#aboutUsMain{
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   background-color: black;
+   font-size: 46px;
+   color: rgb(238, 228, 228); 
+   font-weight: bold;
+   display: none;
+}
+.gm-style .gm-style-iw p{
+   color: black !important;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#aboutUs h3{
+   color:black;
+   font-family: Arial, Helvetica, sans-serif;
+}   
+
+.reggg{
+   display:block;
+   color: white;
+   text-align: center;
+   padding-left: 75px;
+   text-decoration: blink;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 6px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/slider.css">
+    <link rel = "stylesheet" href = "css/reg.css">
+    <title>Registrarion</title>
+</head>
+
+<body>
+   <nav class= "main_Menu">
+       <ul class = "menu">
+           <a class = "logo" href="index.html"><img src = "src/Logo.jpg" height="123px" width="170px"></a>
+            <li><a href="iphone.html">Iphone</a></li>
+            <li><a href="airPods.html">AirPods</a></li>
+            <li><a href="additionally.html">Additionally</a></li>
+            <li class="reggg"><a href="registration.html">login</a></li>
+        </ul>
+   </nav>
+   <h1 class="reg">Registrarion</h1>
+   <div id="formContainer">
+       <div id="header"> </div>
+       <input type="email" placeholder="Input your email" id="email"/>
+       <input type="password" placeholder="Input your password" id="pass"/>
+
+       <button onclick="signUp()" id="signUp">Sign Up</button>
+       <button onclick="signIn()" id="signIn">Sign In</button>
+       <button onclick="signOut()" id="signOut">Sign Out</button>
+   </div>
+<script src="js/reg.js"></script>
+</body>
+</html>

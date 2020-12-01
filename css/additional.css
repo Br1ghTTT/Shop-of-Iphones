@@ -1,0 +1,67 @@
+.add_main{
+    padding-top: 20px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(238, 228, 228);
+    font-weight: bold;
+    background-color: black;
+}
+
+.add_info{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 24px;
+    color: rgb(238, 228, 228);
+    font-weight: bold;
+    background-color: black;
+}
+#s1{
+    background-color: black;
+    color: white;  
+    font-size: 24px;
+    width: 45%;
+}
+#s2{ 
+    background-color: black;
+    color: white;  
+    font-size: 24px;
+    width: 45%;
+    text-align: center;
+}
+.selects{
+    text-align: center;
+}
+
+
+
+#a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 24px;
+    color: rgb(238, 228, 228);
+    font-weight: bold;
+    background-color: black;
+    text-align: center ;
+}
+
+#text{
+   padding-top: 3px;
+   display: inline-block;
+   left: 25%;
+   width: 50%;
+}
+#text1{
+    padding-top: 3px;
+    display: inline-block;
+    right: 25%;
+    width: 50%;
+}

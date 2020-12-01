@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/iphone.css">
+    <link rel = "stylesheet" href = "css/reg.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Iphones</title>
+</head>
+<body>
+    <nav class= "main_Menu">
+        <ul class = "menu">
+            <a class = "logo" href= "index.html"><img src = "src/Logo.jpg" height="123px" width="170px"></a>
+             <li><a href="iphone.html">Iphone</a></li>
+             <li><a href="airPods.html">AirPods</a></li>
+             <li><a href="additionally.html">Additionally</a></li>
+             <li class="reggg"><a href="registration.html">login</a></li>
+         </ul>
+    </nav>
+    <div class="row">
+        <div class="left" style="background-color:black;">
+          <h2>Menu</h2>
+          <input type="text" id="mySearch" onkeyup="theSearch()" placeholder="Search.." title="Type in a category">
+          <ul id="myMenu">
+            <li><a href="#i7" onclick="forI7()">Iphone 7/ 7plus</a></li>
+            <li><a href="#i8" onclick="forI8()">Iphone 8/ 8plus</a></li>
+            <li><a href="#iX" onclick="forIX()">Iphone X / Xr / Xs / XsMax</a></li>
+            <li><a href="#i11"onclick="forI11()">Iphone 11/11Pro/11ProMax/SE</a></li>
+            <li><a href="#i12" onclick="forI12()">Iphone 12/12Pro/Min/12ProMax</a></li>
+            <li><a href="#all" onclick="forAll()">Show all phones</a></li>
+          </ul>
+          <input type="text" id="count" readonly  placeholder="0" title="Type in a category"><input id="btn" type="button" value = "The summary price of phones in dollars">
+        </div>
+        
+        <div class="right" id="right" style="background-color: rgb(14, 13, 13);">
+<!-- ************************************************Iphones 7************************************************* -->
+            <div id ="i7" class="i7">
+                <form class="container">
+                    <img id= "img" src="src/Iphones/iphone7.jpg"width="280px" height="300px" >
+                   <select name="iphone" id="iphone7" onchange="compare()" onchange="color7()">
+                    <option value="def">Choose </option>
+                    <option value="64gb">Iphone 7 ( 64gb )</option>
+                    <option value="128gb">Iphone 7 ( 128gb )</option>
+                    <option value="256gb">Iphone 7 ( 256gb )</option>
+                </select>            
+                <button id = "i7but" onclick="toBuy()">Buy</button>
+
+                <select name="col" id="iphone7col"></select>
+
+                <select name="price" id="priceFor7"></select>
+
+                <p id = "priceForIphone7"></p>
+                <p id = "colorForIphone7"></p>
+                </form>
+                
+                <form class="container1">
+                    <img id= "img" src="src/Iphones/iphone7_Plus.jpg"width="280px" height="300px" >
+                   <select name="iphone7Plus" id="iphone7Plus" onchange="compare7Plus()" onchange="color7Plus()">
+                    <option value="def_">Choose </option>
+                    <option value="64gb">Iphone 7+ ( 64gb )</option>
+                    <option value="128gb">Iphone 7+  ( 128gb )</option>
+                    <option value="256gb">Iphone 7+  ( 256gb )</option>
+                </select>        
+
+                <button id = "i7Pbut" onclick="toBuy()">Buy</button>
+
+                <select name="col" id="iphone7Pcol"></select>
+
+                <select name="price7" id="priceFor7Plus"></select>
+
+                <p id = "priceForIphone7Plus"></p>
+                </form>
+        </div>
+<!-- ************************************************Iphones 8************************************************* -->
+        <div class="i8" id = "i8">
+            <form class="container">
+                <img id= "img" src="src/Iphones/iphone8.jpg"width="280px" height="300px" >
+               <select name="iphone" id="iphone8" onchange="compare8()" onchange="color8()">
+                <option value="def">Choose </option>
+                <option value="64gb">Iphone 8 ( 64gb )</option>
+                <option value="128gb">Iphone 8 ( 128gb )</option>
+                <option value="256gb">Iphone 8 ( 256gb )</option>
+            </select>                 
+            <button id="i8but" onclick="toBuy()">Buy</button>
+            
+            <select name="col" id="iphone8col"></select>
+
+            <select name="priceFor8" id="priceFor8"></select>
+            <p id = "priceForIphone8"></p>
+            </form>
+            
+
+
+            <form class="container1">
+                <img id= "img" src="src/Iphones/iphone8_Plus.jpg"width="280px" height="300px" >
+               <select name="iphone8Plus" id="iphone8Plus" onchange="compare8plus()" onchange="color8Plus()">
+                <option value="def">Choose </option>
+                <option value="64gb">Iphone 8+ ( 64gb )</option>
+                <option value="128gb">Iphone 8+  ( 128gb )</option>
+                <option value="256gb">Iphone 8+  ( 256gb )</option>
+            </select>        
+
+            <button id = "i8Pbut" onclick="toBuy()">Buy</button>
+
+            <select name="col" id="iphone8Pcol"></select>
+            
+            <select name="price8" id="priceFor8Plus"></select>
+            
+            <p id = "priceForIphone8Plus"></p>
+            </form>
+    </div>
+<!-- ************************************************Iphones X************************************************* -->
+<div class="iX" id = "iX">
+    <form class="container">
+        <img id= "img" src="src/Iphones/iphoneX.jpg"width="280px" height="300px" >
+       <select name="iphone" id="iphoneX" onchange="compareX()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone X ( 64gb )</option>
+        <option value="256gb">Iphone X ( 256gb )</option>
+        <option value="512gb">Iphone X ( 512gb )</option>
+    </select>                 
+    <button id="i8but" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphoneXcol"></select>
+    <select name="priceForx" id="priceForX"></select>
+    <p id = "priceForIphoneX"></p>
+    </form>
+    
+    <form class="container1">
+        <img id= "img" src="src/Iphones/iphoneXr.jpg"width="280px" height="300px" >
+       <select name="iphoneXr" id="iphoneXr" onchange="compareXr()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone Xr ( 64gb )</option>
+        <option value="256gb">Iphone Xr  ( 256gb )</option>
+        <option value="512gb">Iphone Xr  ( 512gb )</option>
+    </select>        
+
+    <button id = "i8but"onclick="toBuy()">Buy</button>
+
+    <select name="col" id="iphoneXrcol"></select>
+
+    <select name="priceXr" id="priceForXr"></select>
+    <p id = "priceForIphoneXr"></p>
+    </form>
+
+
+<!-- ************************************************Iphones XSS************************************************* -->
+    <form class="container">
+        <img id= "img" src="src/Iphones/iphoneXS.jpg"width="280px" height="300px" >
+       <select name="iphone" id="iphoneXs" onchange="compareXs()" onchange="compareXs">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone Xs ( 64gb )</option>
+        <option value="256gb">Iphone Xs ( 256gb )</option>
+        <option value="512gb">Iphone Xs ( 512gb )</option>
+    </select>                 
+    <button id="i8but" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphoneXscol"></select>
+    <select name="priceForxs" id="priceForXs"></select>
+    <p id = "priceForIphoneXs"></p>
+    </form>
+    
+    <form class="container1">
+        <img id= "img" src="src/Iphones/iphoneXS_Max.jpg"width="280px" height="300px" >
+       <select name="iphoneXsMax" id="iphoneXsMax" onchange="compareXsMax()" onchange="colorXsMax()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone Xs Max ( 64gb )</option>
+        <option value="256gb">Iphone Xs Max  ( 256gb )</option>
+        <option value="512gb">Iphone Xs Max  ( 512gb )</option>
+    </select>        
+
+    <button id="i11probut" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphoneXsMaxcol"></select>
+    <select name="priceXsMax" id="priceForXsMax"></select>
+    <p id = "priceForIphoneXsMax"></p>
+    </form>
+</div>
+
+<!-- ************************************************Iphones 11************************************************* -->
+
+<div class="i11" id = "i11">
+    <form class="container">
+        <img id= "img" src="src/Iphones/iphone11.jpg"width="280px" height="300px" >
+       <select name="iphone" id="iphone11" onchange="compare11()" onchange="color11()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone 11 ( 64gb )</option>
+        <option value="256gb">Iphone 11 ( 256gb )</option>
+        <option value="512gb">Iphone 11 ( 512gb )</option>
+    </select>                 
+    <button id="i8but" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphone11col"></select>
+    <select name="priceFor11" id="priceFor11"></select>
+    <p id = "priceForIphone11"></p>
+    </form>
+    
+    <form class="container1">
+        <img id= "img" src="src/Iphones/iphone11_PRO.jpg"width="280px" height="300px" >
+       <select name="iphone" id="iphone11Pro" onchange="compare11Pro()" onchange="colar11Pro()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone 11 Pro ( 64gb )</option>
+        <option value="256gb">Iphone 11 Pro  ( 256gb )</option>
+        <option value="512gb">Iphone 11 Pro  ( 512gb )</option>
+    </select>        
+
+    <button id="i11probut" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphone11Procol"></select>
+    <select name="price11Pro" id="priceFor11Pro"></select>
+    <p id = "priceForIphone11Pro"></p>
+    </form>
+
+
+    <form class="container1">
+        <img id= "img" src="src/Iphones/iphone11_PRO_MAX.jpg"width="280px" height="300px" >
+       <select name="iphone" id="iphone11ProMax" onchange="compare11ProMax()" onchange="color11ProMax()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone 11 Pro Max ( 64gb )</option>
+        <option value="256gb">Iphone 11 Pro  Max ( 256gb )</option>
+        <option value="512gb">Iphone 11 Pro  Max ( 512gb )</option>
+    </select>        
+
+    <button id="i11probut" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphone11ProMaxcol"></select>
+    <select name="price11ProMax" id="priceFor11ProMax"></select>
+    <p id = "priceForIphone11ProMax"></p>
+    </form>
+
+
+    <!-- ************************************************Iphones SE2************************************************* -->
+    <form class="container">
+        <img id= "img" src="src/Iphones/iphoneSE2.jpg"width="280px" height="300px" >
+       <select name="iphone" id="iphoneSE" onchange="colorSE()" onchange="compareSE()">
+        <option value="def">Choose </option>
+        <option value="64gb">Iphone SE ( 64gb )</option>
+        <option value="128gb">Iphone SE ( 256gb )</option>
+        <option value="256gb">Iphone SE ( 512gb )</option>
+    </select>                 
+    <button id="i8but" onclick="toBuy()">Buy</button>
+    <select name="col" id="iphoneSEcol"></select>
+    <select name="priceForSE" id="priceForSE"></select>
+    <p id = "priceForIphoneSE"></p>
+    </form>
+</div>
+
+<div id ="i12" class="i12">
+    Soon, In our shop. If you want to be notificeted when this phone will be available for buying just click the button!
+
+    <div class="cent"><button id="but_i12" onclick="note()"> Click to be infromed </button></div>
+
+
+</div>
+
+
+</div>
+    </div>
+<script src="js/iphone.js"></script>     
+<script src="js/menu.js"></script> 
+<script src="js/reg.js"></script>  
+</body>
+</html>
