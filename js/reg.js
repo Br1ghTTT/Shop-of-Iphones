@@ -67,17 +67,6 @@ We will call you in nearest 3 minutes to confirm your order`);
 }
 
 
-/* function notificate(){
-  auth.onAuthStateChanged(function(user){
-    if(user){
-        alert(`We will notificate you on ur email when this phone is going to be available for buying`);
-    }else{
-        alert(`We can't notificate you until you don't registered`);
-    }
-  });
-}
- */
-
 function note(){
   auth.onAuthStateChanged(function(user){
   if(user){
